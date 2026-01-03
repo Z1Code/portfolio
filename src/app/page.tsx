@@ -6,7 +6,11 @@ import {
   SiNodedotjs, 
   SiJavascript,
   SiPostgresql,
-  SiGit
+  SiGit,
+  SiNvidia,
+  SiAmd,
+  SiIntel,
+  SiAsus
 } from "react-icons/si";
 
 const technologies = [
@@ -16,6 +20,13 @@ const technologies = [
   { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
   { name: "Git", icon: SiGit, color: "text-orange-500" },
   { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-700" },
+];
+
+const hardware = [
+  { name: "NVIDIA | CUDA", icon: SiNvidia, color: "text-green-500" },
+  { name: "AMD", icon: SiAmd, color: "text-red-500" },
+  { name: "Intel", icon: SiIntel, color: "text-blue-500" },
+  { name: "ASUS", icon: SiAsus, color: "text-red-600" },
 ];
 
 export default function Home() {
@@ -29,6 +40,7 @@ export default function Home() {
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Acerca</a>
               <a href="#technologies" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Tecnologías</a>
+              <a href="#hardware" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Hardware</a>
               <a href="#projects" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Proyectos</a>
               <a href="#contact" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contacto</a>
             </div>
@@ -130,10 +142,10 @@ export default function Home() {
       </section>
 
       {/* Technologies Section */}
-      <section id="technologies" className="py-20 px-6">
+      <section id="technologies" className="py-12 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-slate-800 dark:text-white mb-12">
-            Tecnologías
+            Tecnologías de desarrollo
           </h2>
           <p className="text-xl text-center text-slate-600 dark:text-slate-300 mb-12">
             Herramientas y tecnologías que domino para crear soluciones excepcionales
@@ -159,11 +171,41 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Hardware Section */}
+      <section id="hardware" className="py-12 px-6 bg-white dark:bg-slate-800/50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-slate-800 dark:text-white mb-12">
+            Hardware
+          </h2>
+          <p className="text-xl text-center text-slate-600 dark:text-slate-300 mb-12">
+            Plataformas y tecnologías de hardware con las que trabajo
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {hardware.map((hw, index) => {
+              const IconComponent = hw.icon;
+              return (
+                <div
+                  key={index}
+                  className="bg-slate-50 dark:bg-slate-700 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow group hover:-translate-y-2 duration-300"
+                >
+                  <div className="flex flex-col items-center space-y-3">
+                    <IconComponent className={`text-4xl ${hw.color} group-hover:scale-110 transition-transform`} />
+                    <span className="text-sm font-medium text-slate-700 dark:text-slate-300 text-center">
+                      {hw.name}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6 bg-white dark:bg-slate-800/50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-slate-800 dark:text-white mb-12">
-            Proyectos Destacados
+            Proyectos
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* VelocitySetups Project */}
