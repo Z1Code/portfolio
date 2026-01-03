@@ -1,0 +1,307 @@
+import Image from "next/image";
+import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from "react-icons/fa";
+import { 
+  SiReact, 
+  SiNextdotjs, 
+  SiNodedotjs, 
+  SiJavascript,
+  SiPostgresql,
+  SiGit
+} from "react-icons/si";
+
+const technologies = [
+  { name: "React", icon: SiReact, color: "text-blue-500" },
+  { name: "Next.js", icon: SiNextdotjs, color: "text-black dark:text-white" },
+  { name: "Node.js", icon: SiNodedotjs, color: "text-green-500" },
+  { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
+  { name: "Git", icon: SiGit, color: "text-orange-500" },
+  { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-700" },
+];
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 z-50">
+        <nav className="max-w-6xl mx-auto px-6 py-4">
+          <div className="flex justify-between items-center">
+            <h2 className="text-xl font-bold text-slate-800 dark:text-white">Juan Fernandez</h2>
+            <div className="hidden md:flex space-x-8">
+              <a href="#about" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Acerca</a>
+              <a href="#technologies" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Tecnologías</a>
+              <a href="#projects" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Proyectos</a>
+              <a href="#contact" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contacto</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="pt-32 pb-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h1 className="text-5xl lg:text-7xl font-bold text-slate-800 dark:text-white mb-6">
+                Hola, soy <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                  Juan Fernandez
+                </span>
+              </h1>
+              <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+                Desarrollador Full Stack apasionado por crear experiencias digitales 
+                innovadoras y soluciones tecnológicas que impacten positivamente.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                  <FaDownload />
+                  Descargar CV
+                </button>
+                <a 
+                  href="#contact"
+                  className="flex items-center justify-center gap-2 border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:border-blue-600 hover:text-blue-600 px-6 py-3 rounded-lg font-medium transition-colors"
+                >
+                  <FaEnvelope />
+                  Contactar
+                </a>
+              </div>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="w-80 h-80 bg-gradient-to-tr from-blue-500 to-purple-600 rounded-full opacity-20 absolute -top-4 -left-4"></div>
+                <div className="w-72 h-72 bg-slate-200 dark:bg-slate-700 rounded-full flex items-center justify-center text-6xl text-slate-400 dark:text-slate-500">
+                  👨‍💻
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 px-6 bg-white dark:bg-slate-800/50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-slate-800 dark:text-white mb-12">
+            Acerca de mí
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-lg text-slate-600 dark:text-slate-300 mb-6">
+                Soy un desarrollador con experiencia en tecnologías modernas de desarrollo web. 
+                Me especializo en crear aplicaciones escalables y eficientes utilizando las 
+                mejores prácticas del desarrollo de software.
+              </p>
+              <p className="text-lg text-slate-600 dark:text-slate-300 mb-6">
+                Mi enfoque se centra en escribir código limpio, mantenible y orientado a 
+                resultados. Disfruto trabajando tanto en el frontend como en el backend, 
+                creando soluciones completas que satisfagan las necesidades del usuario.
+              </p>
+              <div className="flex space-x-4">
+                <a href="#" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 text-2xl transition-colors">
+                  <FaGithub />
+                </a>
+                <a href="#" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 text-2xl transition-colors">
+                  <FaLinkedin />
+                </a>
+                <a href="#" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 text-2xl transition-colors">
+                  <FaEnvelope />
+                </a>
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-6">
+              <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg">
+                <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">3+</h3>
+                <p className="text-slate-600 dark:text-slate-300">Años de Experiencia</p>
+              </div>
+              <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg">
+                <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">20+</h3>
+                <p className="text-slate-600 dark:text-slate-300">Proyectos Completados</p>
+              </div>
+              <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg">
+                <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">100%</h3>
+                <p className="text-slate-600 dark:text-slate-300">Satisfacción Cliente</p>
+              </div>
+              <div className="bg-slate-50 dark:bg-slate-700 p-6 rounded-lg">
+                <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">24/7</h3>
+                <p className="text-slate-600 dark:text-slate-300">Soporte Disponible</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technologies Section */}
+      <section id="technologies" className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-slate-800 dark:text-white mb-12">
+            Tecnologías
+          </h2>
+          <p className="text-xl text-center text-slate-600 dark:text-slate-300 mb-12">
+            Herramientas y tecnologías que domino para crear soluciones excepcionales
+          </p>
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
+            {technologies.map((tech, index) => {
+              const IconComponent = tech.icon;
+              return (
+                <div
+                  key={index}
+                  className="bg-white dark:bg-slate-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow group hover:-translate-y-2 duration-300"
+                >
+                  <div className="flex flex-col items-center space-y-3">
+                    <IconComponent className={`text-4xl ${tech.color} group-hover:scale-110 transition-transform`} />
+                    <span className="text-sm font-medium text-slate-700 dark:text-slate-300 text-center">
+                      {tech.name}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-20 px-6 bg-white dark:bg-slate-800/50">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-slate-800 dark:text-white mb-12">
+            Proyectos Destacados
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* VelocitySetups Project */}
+            <div className="bg-slate-50 dark:bg-slate-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative">
+              <div className="h-48 overflow-hidden relative">
+                {/* GPU Background */}
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black opacity-80">
+                  <div className="absolute inset-0" style={{
+                    backgroundImage: `url('https://images.unsplash.com/photo-1591488320449-011701bb6704?w=400&h=200&fit=crop&auto=format')`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    filter: 'blur(2px)'
+                  }}></div>
+                </div>
+                {/* Banner overlay */}
+                <div className="relative z-10 flex items-center justify-center h-full bg-black bg-opacity-40">
+                  <img 
+                    src="https://velocitysetups.com/banner.png" 
+                    alt="VelocitySetups Banner"
+                    className="max-w-[80%] max-h-[80%] object-contain rounded-lg shadow-2xl"
+                  />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-3">
+                  VelocitySetups
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">
+                  Plataforma web especializada en la venta de builds de PC optimizados para gaming. 
+                  Diseño moderno y experiencia de usuario enfocada en gamers.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">
+                    React
+                  </span>
+                  <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
+                    Next.js
+                  </span>
+                  <span className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 text-sm rounded-full">
+                    E-commerce
+                  </span>
+                </div>
+                <div className="flex space-x-4">
+                  <a 
+                    href="https://velocitysetups.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 dark:text-blue-400 hover:underline"
+                  >
+                    Ver Sitio Web
+                  </a>
+                  <a href="#" className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400">
+                    <FaGithub className="inline" /> Código
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Coming Soon Project 1 */}
+            <div className="bg-slate-50 dark:bg-slate-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow opacity-75">
+              <div className="h-48 bg-gradient-to-br from-slate-300 to-slate-500 flex items-center justify-center">
+                <div className="text-slate-600 text-center">
+                  <div className="text-4xl mb-2">⏳</div>
+                  <div className="text-lg font-medium">Próximamente</div>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-3">
+                  Proyecto en Desarrollo
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">
+                  Nuevo proyecto innovador en fase de desarrollo. 
+                  Pronto disponible con tecnologías de vanguardia.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-300 text-sm rounded-full">
+                    En desarrollo
+                  </span>
+                </div>
+                <div className="flex space-x-4">
+                  <span className="text-slate-400 dark:text-slate-500">Próximamente</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Coming Soon Project 2 */}
+            <div className="bg-slate-50 dark:bg-slate-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow opacity-75">
+              <div className="h-48 bg-gradient-to-br from-slate-300 to-slate-500 flex items-center justify-center">
+                <div className="text-slate-600 text-center">
+                  <div className="text-4xl mb-2">🚀</div>
+                  <div className="text-lg font-medium">A continuación</div>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-slate-800 dark:text-white mb-3">
+                  Futuro Proyecto
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300 mb-4">
+                  Más proyectos innovadores están en camino. 
+                  Mantente al tanto de las próximas actualizaciones.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-300 text-sm rounded-full">
+                    Planificación
+                  </span>
+                </div>
+                <div className="flex space-x-4">
+                  <span className="text-slate-400 dark:text-slate-500">A continuación</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-slate-800 dark:text-white mb-6">
+            ¿Tienes un proyecto en mente?
+          </h2>
+          <p className="text-xl text-slate-600 dark:text-slate-300 mb-8">
+            Estoy disponible para nuevos proyectos y colaboraciones. ¡Hablemos!
+          </p>
+          <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-medium text-lg transition-all hover:scale-105">
+            Empecemos a trabajar juntos
+          </button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-8 px-6 bg-slate-800 dark:bg-slate-900">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-slate-300">
+            © 2024 Juan Fernandez. Todos los derechos reservados.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+}
