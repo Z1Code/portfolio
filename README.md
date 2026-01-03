@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Portafolio Web - Juan Fernandez
 
 Un portafolio web moderno y responsivo construido con Next.js, TypeScript y Tailwind CSS.
@@ -142,3 +143,7 @@ Este proyecto está bajo la Licencia MIT - ve el archivo [LICENSE](LICENSE) para
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# Portfolio
+Portafolio de desarrollador web donde muestro mis proyectos, habilidades técnicas y evolución profesional.
+>>>>>>> f9ef3da0bea7d35c54069c1c39ef9e27618c5038
