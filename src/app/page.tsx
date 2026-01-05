@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaDownload, FaWhatsapp } from "react-icons/fa";
 import { 
   SiReact, 
   SiNextdotjs, 
@@ -31,9 +31,26 @@ const hardware = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 z-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 relative overflow-hidden">
+      {/* Animated Background */}
+      <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+        {/* Gradient Orbs */}
+        <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 dark:bg-purple-900 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-30 animate-blob"></div>
+        <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 dark:bg-yellow-900 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-30 animate-blob animation-delay-2000"></div>
+        <div className="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 dark:bg-pink-900 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-30 animate-blob animation-delay-4000"></div>
+        <div className="absolute bottom-20 right-20 w-72 h-72 bg-blue-300 dark:bg-blue-900 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-xl opacity-30 animate-blob animation-delay-6000"></div>
+
+        {/* Floating Shapes */}
+        <div className="absolute top-1/4 left-1/4 w-16 h-16 border-2 border-blue-400/20 dark:border-blue-400/10 rounded-lg rotate-45 animate-float"></div>
+        <div className="absolute top-1/3 right-1/4 w-12 h-12 border-2 border-purple-400/20 dark:border-purple-400/10 rounded-full animate-float animation-delay-2000"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-20 h-20 border-2 border-pink-400/20 dark:border-pink-400/10 rounded-lg animate-float animation-delay-4000"></div>
+        <div className="absolute bottom-1/3 right-1/3 w-14 h-14 border-2 border-yellow-400/20 dark:border-yellow-400/10 rounded-full rotate-12 animate-float animation-delay-6000"></div>
+      </div>
+
+      {/* Content Container */}
+      <div className="relative z-10">
+        {/* Header */}
+        <header className="fixed top-0 left-0 right-0 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm border-b border-slate-200 dark:border-slate-700 z-50">
         <nav className="max-w-6xl mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <h2 className="text-xl font-bold text-slate-800 dark:text-white">Juan Fernandez</h2>
@@ -69,13 +86,31 @@ export default function Home() {
                 resultados. Disfruto trabajando tanto en el frontend como en el backend,
                 creando soluciones completas que satisfagan las necesidades del usuario.
               </p>
-              <div>
+              <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="#contact"
                   className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
                 >
                   <FaEnvelope />
                   Contactar
+                </a>
+                <a
+                  href="https://wa.me/56937111513?text=¡Hola!%20Me%20interesa%20contactarte%20para%20un%20proyecto."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                >
+                  <FaWhatsapp />
+                  WhatsApp
+                </a>
+                <a
+                  href="https://github.com/Z1Code"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                >
+                  <FaGithub />
+                  GitHub
                 </a>
               </div>
             </div>
@@ -133,7 +168,7 @@ export default function Home() {
       </section>
 
       {/* Hardware Section */}
-      <section id="hardware" className="py-12 px-6 bg-white dark:bg-slate-800/50">
+      <section id="hardware" className="py-12 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-slate-800 dark:text-white mb-12">
             Hardware
@@ -164,7 +199,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 px-6 bg-white dark:bg-slate-800/50">
+      <section id="projects" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-slate-800 dark:text-white mb-12">
             Proyectos
@@ -294,20 +329,27 @@ export default function Home() {
           <p className="text-xl text-slate-600 dark:text-slate-300 mb-8">
             Estoy disponible para nuevos proyectos y colaboraciones. ¡Hablemos!
           </p>
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-lg font-medium text-lg transition-all hover:scale-105">
-            Empecemos a trabajar juntos
-          </button>
+          <a 
+            href="https://wa.me/56937111513?text=¡Hola!%20Me%20interesa%20contactarte%20para%20un%20proyecto." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-lg font-medium text-lg transition-all hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            <FaWhatsapp className="text-xl" />
+            Contactar por WhatsApp
+          </a>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-8 px-6 bg-slate-800 dark:bg-slate-900">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-slate-300">
-            © 2024 Juan Fernandez. Todos los derechos reservados.
-          </p>
-        </div>
-      </footer>
+        {/* Footer */}
+        <footer className="py-8 px-6 bg-slate-800 dark:bg-slate-900">
+          <div className="max-w-6xl mx-auto text-center">
+            <p className="text-slate-300">
+              © 2024 Juan Fernandez. Todos los derechos reservados.
+            </p>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }
