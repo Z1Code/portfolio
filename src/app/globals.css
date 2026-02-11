@@ -1,0 +1,319 @@
+@import url('https://fonts.cdnfonts.com/css/switzer');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-switzer: 'Switzer', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-manrope: 'Manrope', sans-serif;
+  --font-cabin: 'Cabin', sans-serif;
+  --font-instrument: 'Instrument Serif', serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom Animations */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.animation-delay-6000 {
+  animation-delay: 6s;
+}
+
+/* GitHub Contributions Chart Pulse Animation */
+@keyframes contribution-pulse {
+  0%, 100% {
+    filter: contrast(1.1) saturate(1.2) brightness(1);
+  }
+  50% {
+    filter: contrast(1.2) saturate(1.4) brightness(1.1);
+  }
+}
+
+.contribution-chart {
+  animation: contribution-pulse 3s ease-in-out infinite;
+}
+
+/* Shimmer animation for badges */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-badge {
+  background-size: 200% 100%;
+  background-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.04) 50%,
+    transparent 100%
+  );
+  animation: shimmer 4s ease-in-out infinite;
+}
+
+/* Flow Hero — silk thread animations */
+@keyframes flowStream {
+  0% {
+    stroke-dashoffset: 2400;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes flowDrift {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-16px) translateX(10px);
+  }
+  100% {
+    transform: translateY(6px) translateX(-6px);
+  }
+}
+
+.flow-line {
+  stroke-dasharray: 600 800;
+  animation:
+    flowStream 8s linear infinite,
+    flowDrift 12s ease-in-out infinite alternate;
+}
+
+/* Pulse slow animation */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ══════════════════════════════════════════════════════════
+   LIQUID GLASS SYSTEM
+   Based on Apple's Liquid Glass (WWDC 2025) + kube.io SVG
+   refraction research.  Three tiers:
+     .glass      — dense  (navbar, footer)
+     .glass-card — medium (content cards)
+     .glass-pill — light  (tags, badges)
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Keyframes ── */
+
+@keyframes glass-shimmer {
+  0%   { background-position: -200% 0, 0 0; }
+  100% { background-position:  200% 0, 0 0; }
+}
+
+@keyframes specular-breathe {
+  0%, 100% { opacity: 0.6; }
+  50%      { opacity: 1; }
+}
+
+/* ── Tier 1 — .glass (navbar, footer) ── */
+
+.glass {
+  position: relative;
+  isolation: isolate;
+  border-radius: 20px;
+
+  /* Shimmer sweep + translucent frosted base */
+  background:
+    linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.06) 50%, transparent 60%),
+    linear-gradient(135deg, rgba(18,22,35,0.48), rgba(12,16,28,0.42));
+  background-size: 200% 100%, 100% 100%;
+  animation: glass-shimmer 7s ease-in-out infinite;
+
+  /* Frosted glass core: blur + color boost + brightness lift */
+  -webkit-backdrop-filter: blur(26px) saturate(1.7) brightness(1.08);
+  backdrop-filter: blur(26px) saturate(1.7) brightness(1.08);
+
+  /* Ring border + inset highlight + depth shadow */
+  box-shadow:
+    0 0 0 0.5px rgba(255,255,255,0.10),
+    inset 0 1px 0 rgba(255,255,255,0.12),
+    0 4px 24px -4px rgba(0,0,0,0.30);
+}
+
+/* Specular highlight — soft overhead glow + sharp top-edge line */
+.glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.07) 0%, transparent 45%),
+    linear-gradient(90deg, transparent 8%, rgba(255,255,255,0.55) 50%, transparent 92%);
+  background-size: 100% 100%, 100% 1px;
+  background-position: 0 0, 0 0;
+  background-repeat: no-repeat;
+  animation: specular-breathe 5s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Prismatic refraction — chromatic color dispersion + edge tinting */
+.glass::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(ellipse 55% 50% at 12% 50%, rgba(0,180,255,0.045) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 55% at 50% 12%, rgba(120,80,255,0.04)  0%, transparent 70%),
+    radial-gradient(ellipse 55% 50% at 88% 50%, rgba(255,100,200,0.035) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 55% at 50% 88%, rgba(100,255,180,0.025) 0%, transparent 70%);
+  /* Chromatic inset edges — each side refracts a different wavelength */
+  box-shadow:
+    inset  1px  0 0 0 rgba(0,180,255,0.07),
+    inset -1px  0 0 0 rgba(255,100,200,0.07),
+    inset  0  1px 0 0 rgba(100,255,180,0.05),
+    inset  0 -1px 0 0 rgba(255,200,50,0.05);
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* ── Tier 2 — .glass-card (content cards) ── */
+
+.glass-card {
+  position: relative;
+  isolation: isolate;
+  border-radius: 16px;
+  background: linear-gradient(160deg, rgba(255,255,255,0.06) 0%, rgba(15,18,30,0.52) 100%);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  backdrop-filter: blur(20px) saturate(1.5);
+  box-shadow:
+    0 0 0 0.5px rgba(255,255,255,0.06),
+    inset 0 1px 0 rgba(255,255,255,0.08),
+    0 2px 12px -4px rgba(0,0,0,0.3);
+  transition:
+    transform 0.35s cubic-bezier(0.4,0,0.2,1),
+    box-shadow 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 0 0 0.5px rgba(255,255,255,0.14),
+    inset 0 1px 0 rgba(255,255,255,0.18),
+    0 8px 32px -8px rgba(0,0,0,0.45);
+}
+
+/* Card specular line */
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 14%;
+  right: 14%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.30) 50%, transparent);
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Card chromatic edges — visible on hover */
+.glass-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow:
+    inset  1px  0 0 0 rgba(0,180,255,0.05),
+    inset -1px  0 0 0 rgba(255,100,200,0.05),
+    inset  0  1px 0 0 rgba(100,255,180,0.03),
+    inset  0 -1px 0 0 rgba(255,200,50,0.03);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.glass-card:hover::after {
+  opacity: 1;
+}
+
+/* ── Tier 3 — .glass-pill (tags, pills) ── */
+
+.glass-pill {
+  -webkit-backdrop-filter: blur(8px) saturate(1.3);
+  backdrop-filter: blur(8px) saturate(1.3);
+  background: rgba(255,255,255,0.05);
+  box-shadow:
+    0 0 0 0.5px rgba(255,255,255,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.08);
+  transition: all 0.25s ease;
+}
+
+.glass-pill:hover {
+  background: rgba(255,255,255,0.09);
+  box-shadow:
+    0 0 0 0.5px rgba(255,255,255,0.14),
+    inset 0 1px 0 rgba(255,255,255,0.12);
+}
