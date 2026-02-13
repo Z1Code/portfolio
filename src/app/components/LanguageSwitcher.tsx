@@ -43,6 +43,7 @@ export default function LanguageSwitcher() {
             transition={{ duration: 0.2, ease: [0.4, 0, 0.2, 1] }}
             className="glass absolute right-0 top-full z-50 mt-2 min-w-[160px] overflow-hidden rounded-xl p-1.5"
           >
+            <div className="relative z-10">
             {Object.entries(languageNames).map(([code, name]) => (
               <button
                 key={code}
@@ -65,6 +66,7 @@ export default function LanguageSwitcher() {
                 )}
               </button>
             ))}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
