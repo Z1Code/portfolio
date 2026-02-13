@@ -620,3 +620,87 @@ body {
 .ambient-particle-3 { top: 70%; left: 65%; animation-delay: 0.8s; animation-duration: 8s; }
 .ambient-particle-4 { top: 30%; left: 75%; animation-delay: 2.2s; animation-duration: 10s; }
 .ambient-particle-5 { top: 80%; left: 20%; animation-delay: 4s; animation-duration: 12s; }
+
+/* ══════════════════════════════════════════════════════════
+   LIQUID GLASS BACKGROUND — CSS-only blob animations
+   ══════════════════════════════════════════════════════════ */
+
+.liquid-blob {
+  filter: blur(80px);
+  will-change: transform;
+}
+
+@keyframes liquid-drift-1 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(12vw, 8vh) scale(1.1) rotate(15deg);
+  }
+  66% {
+    transform: translate(-5vw, 15vh) scale(0.95) rotate(-10deg);
+  }
+  100% {
+    transform: translate(8vw, -5vh) scale(1.05) rotate(20deg);
+  }
+}
+
+@keyframes liquid-drift-2 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(-10vw, -8vh) scale(1.08) rotate(-20deg);
+  }
+  66% {
+    transform: translate(8vw, -12vh) scale(0.92) rotate(15deg);
+  }
+  100% {
+    transform: translate(-6vw, 10vh) scale(1.12) rotate(-25deg);
+  }
+}
+
+@keyframes liquid-drift-3 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(15vw, -10vh) scale(1.15) rotate(25deg);
+  }
+  66% {
+    transform: translate(-8vw, 6vh) scale(0.88) rotate(-15deg);
+  }
+  100% {
+    transform: translate(5vw, 12vh) scale(1.05) rotate(10deg);
+  }
+}
+
+@keyframes liquid-drift-4 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(-12vw, 10vh) scale(1.1) rotate(-30deg);
+  }
+  66% {
+    transform: translate(10vw, 5vh) scale(0.9) rotate(20deg);
+  }
+  100% {
+    transform: translate(-4vw, -8vh) scale(1.08) rotate(-15deg);
+  }
+}
+
+@keyframes liquid-drift-5 {
+  0% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(8vw, -6vh) scale(1.12) rotate(15deg);
+  }
+  66% {
+    transform: translate(-10vw, -10vh) scale(0.95) rotate(-25deg);
+  }
+  100% {
+    transform: translate(12vw, 8vh) scale(1.02) rotate(20deg);
+  }
+}
