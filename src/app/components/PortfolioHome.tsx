@@ -314,7 +314,7 @@ function HeroSection() {
   return (
     <section
       id="about"
-      className="relative mx-auto flex min-h-[72vh] max-w-4xl flex-col items-center justify-center px-6 pt-18 text-center"
+      className="relative mx-auto flex min-h-[85vh] max-w-4xl flex-col items-center justify-center px-6 pt-28 text-center"
     >
       {/* Floating ambient particles */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
