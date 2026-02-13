@@ -26,6 +26,11 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
@@ -317,3 +322,301 @@ body {
     0 0 0 0.5px rgba(255,255,255,0.14),
     inset 0 1px 0 rgba(255,255,255,0.12);
 }
+
+/* ══════════════════════════════════════════════════════════
+   APPLE LIQUID TYPOGRAPHY SYSTEM
+   Based on Apple's SF Pro size-dependent tracking, stepped
+   responsive scaling (3 breakpoints: default → 1068px → 735px),
+   and weight hierarchy.  Uses Inter as SF Pro web equivalent.
+   ══════════════════════════════════════════════════════════ */
+
+/* ── Hero / Display ── */
+.type-hero {
+  font-size: 64px;
+  line-height: 1.0625;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+
+@media (max-width: 1068px) {
+  .type-hero {
+    font-size: 48px;
+    line-height: 1.08;
+    letter-spacing: -0.003em;
+  }
+}
+
+@media (max-width: 735px) {
+  .type-hero {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0em;
+  }
+}
+
+/* ── Section Headline ── */
+.type-headline {
+  font-size: 48px;
+  line-height: 1.08365;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+}
+
+@media (max-width: 1068px) {
+  .type-headline {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0em;
+  }
+}
+
+@media (max-width: 735px) {
+  .type-headline {
+    font-size: 32px;
+    line-height: 1.125;
+    letter-spacing: 0.004em;
+  }
+}
+
+/* ── Section Subtitle / Eyebrow ── */
+.type-eyebrow {
+  font-size: 21px;
+  line-height: 1.19048;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+}
+
+@media (max-width: 1068px) {
+  .type-eyebrow {
+    font-size: 19px;
+    line-height: 1.21;
+    letter-spacing: 0.012em;
+  }
+}
+
+@media (max-width: 735px) {
+  .type-eyebrow {
+    font-size: 17px;
+    line-height: 1.235;
+    letter-spacing: -0.022em;
+  }
+}
+
+/* ── Body Elevated (intro, subtitles) ── */
+.type-body-lg {
+  font-size: 21px;
+  line-height: 1.381;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+}
+
+@media (max-width: 1068px) {
+  .type-body-lg {
+    font-size: 19px;
+    line-height: 1.42;
+    letter-spacing: 0.012em;
+  }
+}
+
+@media (max-width: 735px) {
+  .type-body-lg {
+    font-size: 17px;
+    line-height: 1.47;
+    letter-spacing: -0.022em;
+  }
+}
+
+/* ── Body Standard ── */
+.type-body {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+}
+
+@media (max-width: 735px) {
+  .type-body {
+    font-size: 15px;
+    line-height: 1.467;
+    letter-spacing: -0.016em;
+  }
+}
+
+/* ── Card Title ── */
+.type-card-title {
+  font-size: 21px;
+  line-height: 1.19;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+}
+
+@media (max-width: 735px) {
+  .type-card-title {
+    font-size: 19px;
+    line-height: 1.21;
+    letter-spacing: 0.012em;
+  }
+}
+
+/* ── Card Body ── */
+.type-card-body {
+  font-size: 15px;
+  line-height: 1.467;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+}
+
+@media (max-width: 735px) {
+  .type-card-body {
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: -0.011em;
+  }
+}
+
+/* ── Navigation ── */
+.type-nav-brand {
+  font-size: 17px;
+  line-height: 1.17;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+}
+
+.type-nav-link {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.016em;
+}
+
+/* ── Small Labels / Tags ── */
+.type-label {
+  font-size: 12px;
+  line-height: 1.33;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+}
+
+/* ── Caption / Fine Print ── */
+.type-caption {
+  font-size: 13px;
+  line-height: 1.23;
+  font-weight: 400;
+  letter-spacing: -0.006em;
+}
+
+/* ── Stats / Metadata ── */
+.type-stat {
+  font-size: 14px;
+  line-height: 1.29;
+  font-weight: 500;
+  letter-spacing: -0.011em;
+}
+
+/* ── CTA Buttons ── */
+.type-button {
+  font-size: 17px;
+  line-height: 1.17647;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+}
+
+@media (max-width: 735px) {
+  .type-button {
+    font-size: 15px;
+    letter-spacing: -0.016em;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════
+   AVAILABILITY BANNER & VISUAL POLISH
+   ══════════════════════════════════════════════════════════ */
+
+/* Bar shimmer animation for workload progress bar */
+@keyframes bar-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.bar-shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: bar-shimmer 2s ease-in-out infinite;
+}
+
+/* Amber hover glow for availability banner */
+.availability-glow {
+  transition:
+    transform 0.35s cubic-bezier(0.4,0,0.2,1),
+    box-shadow 0.35s cubic-bezier(0.4,0,0.2,1),
+    border-color 0.35s ease;
+}
+
+.availability-glow:hover {
+  box-shadow:
+    0 0 0 0.5px rgba(255,255,255,0.14),
+    inset 0 1px 0 rgba(255,255,255,0.18),
+    0 8px 32px -8px rgba(0,0,0,0.45),
+    0 0 40px -8px rgba(245, 158, 11, 0.15);
+}
+
+/* Glass-card border-color transition enhancement */
+.glass-card {
+  border: 1px solid transparent;
+}
+
+.glass-card:hover {
+  border-color: rgba(255,255,255,0.06);
+}
+
+/* Glass-pill focus-visible accessibility ring */
+.glass-pill:focus-visible {
+  outline: 2px solid rgba(245, 158, 11, 0.6);
+  outline-offset: 2px;
+}
+
+/* ── Floating ambient particles (hero) ── */
+@keyframes ambient-float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translateY(-40px) translateX(20px);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-20px) translateX(-15px);
+    opacity: 0.2;
+  }
+  75% {
+    transform: translateY(-60px) translateX(10px);
+    opacity: 0.5;
+  }
+}
+
+.ambient-particle {
+  width: 3px;
+  height: 3px;
+  animation: ambient-float 8s ease-in-out infinite;
+}
+
+.ambient-particle-0 { top: 20%; left: 10%; animation-delay: 0s; animation-duration: 9s; }
+.ambient-particle-1 { top: 60%; left: 85%; animation-delay: 1.5s; animation-duration: 7s; }
+.ambient-particle-2 { top: 40%; left: 30%; animation-delay: 3s; animation-duration: 11s; }
+.ambient-particle-3 { top: 70%; left: 65%; animation-delay: 0.8s; animation-duration: 8s; }
+.ambient-particle-4 { top: 30%; left: 75%; animation-delay: 2.2s; animation-duration: 10s; }
+.ambient-particle-5 { top: 80%; left: 20%; animation-delay: 4s; animation-duration: 12s; }
