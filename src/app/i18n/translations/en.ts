@@ -58,8 +58,34 @@ const en: Translations = {
         "Online store for premium Colombian shapewear with shipping throughout Chile.",
       tags: ["React", "Next.js", "E-commerce"],
     },
+    trumark: {
+      description:
+        "Certification and sales platform for Trumark, with product management and direct contact.",
+      tags: ["React", "Next.js", "Platform"],
+    },
+    fashionmodel: {
+      description:
+        "AI-powered fashion photo generator for models and brands.",
+      tags: ["React", "Next.js", "AI"],
+    },
+    camisas: {
+      description:
+        "E-commerce for retro and alternative football shirts with exclusive designs.",
+      tags: ["React", "Next.js", "E-commerce"],
+    },
     viewSite: "View Website",
     code: "Code",
+  },
+  community: {
+    title: "Community Contributions",
+    subtitle: "Open source projects for the developer community",
+    glassRefraction: {
+      description:
+        "Library to emulate iOS 26 Glass Refraction effect with CSS and SVG filters.",
+      tags: ["CSS", "SVG", "iOS 26", "Open Source"],
+    },
+    viewRepo: "View Repository",
+    stars: "stars",
   },
   contact: {
     title: "Have a project in mind?",

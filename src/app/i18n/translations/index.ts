@@ -48,8 +48,21 @@ export interface Translations {
     velocity: ProjectTranslation;
     prolevelcode: ProjectTranslation;
     ivania: ProjectTranslation;
+    trumark: ProjectTranslation;
+    fashionmodel: ProjectTranslation;
+    camisas: ProjectTranslation;
     viewSite: string;
     code: string;
+  };
+  community: {
+    title: string;
+    subtitle: string;
+    glassRefraction: {
+      description: string;
+      tags: string[];
+    };
+    viewRepo: string;
+    stars: string;
   };
   contact: {
     title: string;

@@ -59,8 +59,34 @@ const pt: Translations = {
         "Loja online de cintas colombianas premium com envios para todo o Chile.",
       tags: ["React", "Next.js", "E-commerce"],
     },
+    trumark: {
+      description:
+        "Plataforma de certifica\u00E7\u00E3o e vendas para Trumark, com gest\u00E3o de produtos e contato direto.",
+      tags: ["React", "Next.js", "Plataforma"],
+    },
+    fashionmodel: {
+      description:
+        "Gerador de fotos de moda com intelig\u00EAncia artificial para modelos e marcas.",
+      tags: ["React", "Next.js", "IA"],
+    },
+    camisas: {
+      description:
+        "E-commerce de camisas de futebol retr\u00F4 e alternativas com designs exclusivos.",
+      tags: ["React", "Next.js", "E-commerce"],
+    },
     viewSite: "Ver Site",
     code: "C\u00F3digo",
+  },
+  community: {
+    title: "Contribui\u00E7\u00F5es para a Comunidade",
+    subtitle: "Projetos open source para a comunidade de desenvolvedores",
+    glassRefraction: {
+      description:
+        "Biblioteca para emular o efeito Glass Refraction do iOS 26 com CSS e filtros SVG.",
+      tags: ["CSS", "SVG", "iOS 26", "Open Source"],
+    },
+    viewRepo: "Ver Reposit\u00F3rio",
+    stars: "estrelas",
   },
   contact: {
     title: "Tem um projeto em mente?",

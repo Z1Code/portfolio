@@ -56,8 +56,30 @@ const zh: Translations = {
       description: "\u54E5\u4F26\u6BD4\u4E9A\u9AD8\u7AEF\u5851\u8EAB\u8863\u5728\u7EBF\u5546\u5E97\uFF0C\u53D1\u8D27\u81F3\u667A\u5229\u5168\u5883\u3002",
       tags: ["React", "Next.js", "\u7535\u5B50\u5546\u52A1"],
     },
+    trumark: {
+      description: "Trumark\u8BA4\u8BC1\u4E0E\u9500\u552E\u5E73\u53F0\uFF0C\u63D0\u4F9B\u4EA7\u54C1\u7BA1\u7406\u548C\u76F4\u63A5\u8054\u7CFB\u3002",
+      tags: ["React", "Next.js", "\u5E73\u53F0"],
+    },
+    fashionmodel: {
+      description: "\u4E3A\u6A21\u7279\u548C\u54C1\u724C\u63D0\u4F9B\u7684AI\u65F6\u5C1A\u7167\u7247\u751F\u6210\u5668\u3002",
+      tags: ["React", "Next.js", "AI"],
+    },
+    camisas: {
+      description: "\u590D\u53E4\u548C\u66FF\u4EE3\u8DB3\u7403\u886B\u7535\u5B50\u5546\u52A1\uFF0C\u72EC\u5BB6\u8BBE\u8BA1\u3002",
+      tags: ["React", "Next.js", "\u7535\u5B50\u5546\u52A1"],
+    },
     viewSite: "\u67E5\u770B\u7F51\u7AD9",
     code: "\u4EE3\u7801",
+  },
+  community: {
+    title: "\u793E\u533A\u8D21\u732E",
+    subtitle: "\u4E3A\u5F00\u53D1\u8005\u793E\u533A\u63D0\u4F9B\u7684\u5F00\u6E90\u9879\u76EE",
+    glassRefraction: {
+      description: "\u4F7F\u7528CSS\u548CSVG\u6EE4\u955C\u6A21\u62DFiOS 26\u73BB\u7483\u6298\u5C04\u6548\u679C\u7684\u5E93\u3002",
+      tags: ["CSS", "SVG", "iOS 26", "\u5F00\u6E90"],
+    },
+    viewRepo: "\u67E5\u770B\u4ED3\u5E93",
+    stars: "\u661F\u6807",
   },
   contact: {
     title: "\u6709\u9879\u76EE\u60F3\u6CD5\uFF1F",

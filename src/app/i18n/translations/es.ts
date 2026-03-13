@@ -59,8 +59,34 @@ const es: Translations = {
         "Tienda online de fajas colombianas premium con env\u00EDos a todo Chile.",
       tags: ["React", "Next.js", "E-commerce"],
     },
+    trumark: {
+      description:
+        "Plataforma de certificación y ventas para Trumark, con gestión de productos y contacto directo.",
+      tags: ["React", "Next.js", "Plataforma"],
+    },
+    fashionmodel: {
+      description:
+        "Generador de fotos de moda con inteligencia artificial para modelos y marcas.",
+      tags: ["React", "Next.js", "IA"],
+    },
+    camisas: {
+      description:
+        "E-commerce de camisas de fútbol retro y alternativas con diseños exclusivos.",
+      tags: ["React", "Next.js", "E-commerce"],
+    },
     viewSite: "Ver Sitio Web",
     code: "C\u00F3digo",
+  },
+  community: {
+    title: "Aportes a la Comunidad",
+    subtitle: "Proyectos open source para la comunidad de desarrolladores",
+    glassRefraction: {
+      description:
+        "Librería para emular el efecto Glass Refraction de iOS 26 con CSS y SVG filters.",
+      tags: ["CSS", "SVG", "iOS 26", "Open Source"],
+    },
+    viewRepo: "Ver Repositorio",
+    stars: "estrellas",
   },
   contact: {
     title: "\u00BFTienes un proyecto en mente?",
