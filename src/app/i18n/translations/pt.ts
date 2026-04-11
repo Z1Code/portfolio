@@ -5,6 +5,7 @@ const pt: Translations = {
     about: "Sobre",
     technologies: "Tecnologias",
     projects: "Projetos",
+    bots: "Bots",
     contact: "Contato",
   },
   hero: {
@@ -93,6 +94,35 @@ const pt: Translations = {
     subtitle:
       "Estou dispon\u00EDvel para novos projetos e colabora\u00E7\u00F5es. Vamos conversar!",
   },
+  bots: {
+    "title": "Agentic Bots e Automação",
+    "subtitle": "Bots de Telegram com IA que automatizam fluxos de trabalho reais — desde publicação em marketplaces até curadoria de redes sociais.",
+    "statusLabels": {
+        "operational": "Operacional",
+        "development": "Em Desenvolvimento",
+        "offline": "Offline"
+    },
+    "hermes": {
+        "name": "Agentic Marketplace Publisher",
+        "description": "Automatiza publicações no Facebook Marketplace — monta configurações de PC, aplica marcas d'água em fotos, gera descrições e publica diretamente pelo Telegram."
+    },
+    "tweetcurator": {
+        "name": "TweetCurator Bot",
+        "description": "Converte conteúdo de repos trending do GitHub de curadores em tweets personalizados que combinam com a voz e estilo único do criador. Cura, reescreve com IA e automatiza todo o pipeline de publicação via Telegram."
+    },
+    "messenger": {
+        "name": "Agentic Marketplace Responder",
+        "description": "Chatbot com IA que responde automaticamente a consultas do Facebook Marketplace, negocia preços e gerencia conversas com clientes em tempo real."
+    },
+    "interested": "Interessado?",
+    "whatsappMessage": "Olá, estou interessado no bot {bot}",
+    "ctaWhatsappMessage": "Olá, estou interessado no AI Agentic Bot Marketplace",
+    "cta": {
+        "title": "AI Agentic Bot Marketplace",
+        "description": "Precisa de um bot personalizado para automatizar seu negócio? Vamos construir juntos — da ideia ao deploy.",
+        "button": "Vamos Conversar"
+    }
+},
   footer: {
     copyright: "\u00A9 2026 Juan Fernandez. Todos os direitos reservados.",
   },

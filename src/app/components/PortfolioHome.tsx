@@ -20,6 +20,7 @@ import {
 import type { IconBaseProps } from "react-icons";
 import PortfolioVideo from "./PortfolioVideo";
 import AvailabilityBanner from "./AvailabilityBanner";
+import BotsSection from "./BotsSection";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "../i18n/LanguageContext";
 
@@ -219,7 +220,8 @@ function Navbar() {
     { label: t.nav.about, href: "#about" },
     { label: t.nav.technologies, href: "#technologies" },
     { label: t.nav.projects, href: "#projects" },
-    { label: t.nav.contact, href: "#contact" },
+    { label: t.nav.bots, href: "#bots" },
+            { label: t.nav.contact, href: "#contact" },
   ];
 
   return (
@@ -874,6 +876,7 @@ export default function PortfolioHome() {
         <ContributionsSection />
         <TechnologiesSection />
         <ProjectsSection />
+        <BotsSection />
         <CommunitySection />
         <ContactSection />
         <Footer />

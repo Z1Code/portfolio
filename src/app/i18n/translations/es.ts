@@ -5,6 +5,7 @@ const es: Translations = {
     about: "Acerca",
     technologies: "Tecnolog\u00EDas",
     projects: "Proyectos",
+    bots: "Bots",
     contact: "Contacto",
   },
   hero: {
@@ -93,6 +94,35 @@ const es: Translations = {
     subtitle:
       "Estoy disponible para nuevos proyectos y colaboraciones. \u00A1Hablemos!",
   },
+  bots: {
+    "title": "Bots Agentic y Automatización",
+    "subtitle": "Bots de Telegram potenciados con IA que automatizan flujos de trabajo reales — desde publicación en marketplaces hasta curación de redes sociales.",
+    "statusLabels": {
+        "operational": "Operativo",
+        "development": "En Desarrollo",
+        "offline": "Fuera de línea"
+    },
+    "hermes": {
+        "name": "Agentic Marketplace Publisher",
+        "description": "Automatiza publicaciones en Facebook Marketplace — arma configuraciones de PC, aplica marcas de agua a fotos, genera descripciones y publica directamente desde Telegram."
+    },
+    "tweetcurator": {
+        "name": "TweetCurator Bot",
+        "description": "Convierte contenido de repos trending de GitHub de curadores en tweets personalizados que coinciden con la voz y estilo único del creador. Cura, reescribe con IA y automatiza todo el pipeline de publicación vía Telegram."
+    },
+    "messenger": {
+        "name": "Agentic Marketplace Responder",
+        "description": "Chatbot potenciado con IA que responde automáticamente a consultas de Facebook Marketplace, negocia precios y gestiona conversaciones con clientes en tiempo real."
+    },
+    "interested": "¿Interesado?",
+    "whatsappMessage": "Hola, me interesa el bot {bot}",
+    "ctaWhatsappMessage": "Hola, me interesa el AI Agentic Bot Marketplace",
+    "cta": {
+        "title": "AI Agentic Bot Marketplace",
+        "description": "¿Necesitas un bot personalizado para automatizar tu negocio? Construyámoslo juntos — desde la idea hasta el despliegue.",
+        "button": "Hablemos"
+    }
+},
   footer: {
     copyright: "\u00A9 2026 Juan Fernandez. Todos los derechos reservados.",
   },

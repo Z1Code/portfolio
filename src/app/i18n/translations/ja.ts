@@ -5,6 +5,7 @@ const ja: Translations = {
     about: "\u6982\u8981",
     technologies: "\u6280\u8853",
     projects: "\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8",
+    bots: "ボット",
     contact: "\u304A\u554F\u3044\u5408\u308F\u305B",
   },
   hero: {
@@ -89,6 +90,35 @@ const ja: Translations = {
     subtitle:
       "\u65B0\u3057\u3044\u30D7\u30ED\u30B8\u30A7\u30AF\u30C8\u3084\u30B3\u30E9\u30DC\u30EC\u30FC\u30B7\u30E7\u30F3\u306E\u3054\u76F8\u8AC7\u3092\u304A\u5F85\u3061\u3057\u3066\u3044\u307E\u3059\uFF01",
   },
+  bots: {
+    "title": "Agentic ボットと自動化",
+    "subtitle": "AI搭載のTelegramボットで実際のビジネスワークフローを自動化——マーケットプレイス出品からSNSキュレーションまで。",
+    "statusLabels": {
+        "operational": "稼働中",
+        "development": "開発中",
+        "offline": "オフライン"
+    },
+    "hermes": {
+        "name": "Agentic Marketplace Publisher",
+        "description": "Facebook Marketplaceへの出品を自動化——PC構成の作成、写真への透かし追加、説明文の生成、Telegramから直接出品。"
+    },
+    "tweetcurator": {
+        "name": "Agentic TweetCurator",
+        "description": "キュレーターからのGitHubトレンドリポジトリコンテンツを、クリエイターの独自の声とスタイルに合わせたパーソナライズされたツイートに変換。AIでキュレーション・書き換えし、Telegram経由で全パイプラインを自動化。"
+    },
+    "messenger": {
+        "name": "Agentic Marketplace Responder",
+        "description": "AI搭載のチャットボットがFacebook Marketplaceの問い合わせに自動応答、価格交渉、リアルタイムでの顧客対話管理を行います。"
+    },
+    "interested": "興味がありますか？",
+    "whatsappMessage": "こんにちは、{bot}ボットに興味があります",
+    "ctaWhatsappMessage": "こんにちは、AI Agentic Bot Marketplaceに興味があります",
+    "cta": {
+        "title": "AIエージェントボットマーケットプレイス",
+        "description": "ビジネスを自動化するカスタムボットが必要ですか？アイデアからデプロイまで一緒に構築しましょう。",
+        "button": "相談する"
+    }
+},
   footer: {
     copyright:
       "\u00A9 2026 Juan Fernandez. \u5168\u8457\u4F5C\u6A29\u6240\u6709\u3002",

@@ -9,6 +9,7 @@ export interface Translations {
     technologies: string;
     projects: string;
     contact: string;
+    bots: string;
   };
   hero: {
     greeting: string;
@@ -67,6 +68,18 @@ export interface Translations {
   contact: {
     title: string;
     subtitle: string;
+  };
+  bots: {
+    title: string;
+    subtitle: string;
+    statusLabels: { operational: string; development: string; offline: string };
+    hermes: { name: string; description: string };
+    tweetcurator: { name: string; description: string };
+    messenger: { name: string; description: string };
+    interested: string;
+    whatsappMessage: string;
+    ctaWhatsappMessage: string;
+    cta: { title: string; description: string; button: string };
   };
   footer: {
     copyright: string;

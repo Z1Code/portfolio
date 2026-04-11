@@ -5,6 +5,7 @@ const zh: Translations = {
     about: "\u5173\u4E8E",
     technologies: "\u6280\u672F",
     projects: "\u9879\u76EE",
+    bots: "机器人",
     contact: "\u8054\u7CFB",
   },
   hero: {
@@ -85,6 +86,35 @@ const zh: Translations = {
     title: "\u6709\u9879\u76EE\u60F3\u6CD5\uFF1F",
     subtitle: "\u6211\u53EF\u4EE5\u63A5\u53D7\u65B0\u9879\u76EE\u548C\u5408\u4F5C\u3002\u8BA9\u6211\u4EEC\u804A\u804A\uFF01",
   },
+  bots: {
+    "title": "Agentic 机器人与自动化",
+    "subtitle": "AI驱动的Telegram机器人，自动化真实业务工作流程——从市场发布到社交媒体内容策划。",
+    "statusLabels": {
+        "operational": "运行中",
+        "development": "开发中",
+        "offline": "离线"
+    },
+    "hermes": {
+        "name": "Agentic Marketplace Publisher",
+        "description": "自动化Facebook Marketplace发布——构建PC配置、为照片添加水印、生成描述并直接从Telegram发布。"
+    },
+    "tweetcurator": {
+        "name": "Agentic TweetCurator",
+        "description": "将策展人的GitHub热门仓库内容转化为匹配创作者独特声音和风格的个性化推文。策划、用AI改写，并通过Telegram自动化整个发布流程。"
+    },
+    "messenger": {
+        "name": "Agentic Marketplace Responder",
+        "description": "AI驱动的聊天机器人，自动回复Facebook Marketplace咨询、协商价格并实时管理客户对话。"
+    },
+    "interested": "感兴趣？",
+    "whatsappMessage": "你好，我对{bot}机器人感兴趣",
+    "ctaWhatsappMessage": "你好，我对AI Agentic Bot Marketplace感兴趣",
+    "cta": {
+        "title": "AI智能机器人市场",
+        "description": "需要定制机器人来自动化您的业务？让我们一起构建——从创意到部署。",
+        "button": "联系我们"
+    }
+},
   footer: {
     copyright: "\u00A9 2026 Juan Fernandez. \u7248\u6743\u6240\u6709\u3002",
   },
