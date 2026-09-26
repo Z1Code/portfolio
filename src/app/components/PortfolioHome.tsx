@@ -23,6 +23,7 @@ import PortfolioVideo from "./PortfolioVideo";
 import AvailabilityBanner from "./AvailabilityBanner";
 import AprTile from "./AprTile";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { DEFAULT_ORDER, type ProjectKey } from "../projects";
 import { useTranslation } from "../i18n/LanguageContext";
 
 const ChipScroll = dynamic(() => import("./ChipScroll"), { ssr: false });
@@ -545,8 +546,21 @@ function TechnologiesSection() {
 
 /* ── Projects ── */
 
-function ProjectsSection() {
+function ProjectsSection({ order }: { order: ProjectKey[] }) {
   const { t } = useTranslation();
+
+  /**
+   * Posición de cada tile.
+   *
+   * El orden se aplica con la propiedad CSS `order` en vez de reordenar el JSX: los
+   * doce tiles son hermanos del mismo grid, así que cambiando este número cambia lo
+   * que se ve sin tocar la estructura (y un proyecto que no esté en la lista guardada
+   * no desaparece: queda al final, en su posición original).
+   */
+  const posicion = (key: ProjectKey) => {
+    const index = order.indexOf(key);
+    return index === -1 ? DEFAULT_ORDER.length + DEFAULT_ORDER.indexOf(key) : index;
+  };
 
   return (
     <section id="projects" className="px-6 py-12">
@@ -559,7 +573,10 @@ function ProjectsSection() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {/* VelocitySetups */}
-          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+          <div
+            className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2"
+            style={{ order: posicion("velocity") }}
+          >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
               <ChipScroll />
             </div>
@@ -608,7 +625,10 @@ function ProjectsSection() {
           </div>
 
           {/* ProLevelCode */}
-          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+          <div
+            className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2"
+            style={{ order: posicion("prolevelcode") }}
+          >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
               <ChipScrollPLC />
             </div>
@@ -657,7 +677,10 @@ function ProjectsSection() {
           </div>
 
           {/* IvaniaBeauty */}
-          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+          <div
+            className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2"
+            style={{ order: posicion("ivania") }}
+          >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
               <ChipScrollIvania />
             </div>
@@ -706,7 +729,10 @@ function ProjectsSection() {
           </div>
 
           {/* L2J game server development */}
-          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+          <div
+            className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2"
+            style={{ order: posicion("l2j") }}
+          >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
               <ChipScrollL2J />
             </div>
@@ -735,7 +761,10 @@ function ProjectsSection() {
           </div>
 
           {/* gcp-oauth-automator */}
-          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+          <div
+            className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2"
+            style={{ order: posicion("gcpOauth") }}
+          >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
               <TerminalOAuth />
             </div>
@@ -775,7 +804,10 @@ function ProjectsSection() {
             </div>
           </div>
           {/* Garru */}
-          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+          <div
+            className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2"
+            style={{ order: posicion("garru") }}
+          >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
               <Image
                 src="/garru-hero-bear.png"
@@ -814,7 +846,10 @@ function ProjectsSection() {
           </div>
 
           {/* Doblez Empanadas */}
-          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+          <div
+            className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2"
+            style={{ order: posicion("doblez") }}
+          >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
               <Image
                 src="/doblez-empanadas.png"
@@ -850,7 +885,10 @@ function ProjectsSection() {
           </div>
 
           {/* SOS Venezuela 2026 */}
-          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+          <div
+            className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2"
+            style={{ order: posicion("sosvenezuela") }}
+          >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
               <Image
                 src="/sosvenezuela-banner.png"
@@ -897,7 +935,10 @@ function ProjectsSection() {
           </div>
 
           {/* PokeScan */}
-          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+          <div
+            className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2"
+            style={{ order: posicion("pokescan") }}
+          >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
               <Image
                 src="/pokescan-dashboard.png"
@@ -944,7 +985,10 @@ function ProjectsSection() {
           </div>
 
           {/* APR Transports */}
-          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+          <div
+            className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2"
+            style={{ order: posicion("apr") }}
+          >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
               <AprTile />
             </div>
@@ -983,7 +1027,10 @@ function ProjectsSection() {
           </div>
 
           {/* Caiena Nails */}
-          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+          <div
+            className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2"
+            style={{ order: posicion("caiena") }}
+          >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
               <Image
                 src="/caiena-nails.webp"
@@ -1037,7 +1084,10 @@ function ProjectsSection() {
           </div>
 
           {/* Knead & Feed Sourdough */}
-          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+          <div
+            className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2"
+            style={{ order: posicion("knead") }}
+          >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
               <Image
                 src="/knead-sourdough.webp"
@@ -1158,7 +1208,7 @@ function Footer() {
 
 /* ── Main export ── */
 
-export default function PortfolioHome() {
+export default function PortfolioHome({ order }: { order: ProjectKey[] }) {
   return (
     <div className={`${fInter} relative min-h-screen`}>
       <GlassFilters />
@@ -1168,7 +1218,7 @@ export default function PortfolioHome() {
         <HeroSection />
         <ContributionsSection />
         <TechnologiesSection />
-        <ProjectsSection />
+        <ProjectsSection order={order} />
         <ContactSection />
         <Footer />
       </div>

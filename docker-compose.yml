@@ -16,3 +16,8 @@ services:
     environment:
       - NODE_ENV=production
       - NEXT_TELEMETRY_DISABLED=1
+      # Los datos que edita el panel (orden de los tiles y contraseña) viven fuera
+      # de la imagen: cada despliegue reconstruye el contenedor y los borraría.
+      - DATA_DIR=/data
+    volumes:
+      - /var/www/7uanf-data:/data

@@ -6,3 +6,6 @@ node_modules
 .env*
 docs
 *.md
+
+# datos locales del panel (contraseña de prueba)
+.data

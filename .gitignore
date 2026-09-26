@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# datos locales del panel (orden de los tiles y contraseña de prueba)
+.data/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
