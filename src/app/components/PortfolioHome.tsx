@@ -21,6 +21,7 @@ import {
 } from "react-icons/si";
 import PortfolioVideo from "./PortfolioVideo";
 import AvailabilityBanner from "./AvailabilityBanner";
+import AprTile from "./AprTile";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "../i18n/LanguageContext";
 
@@ -932,6 +933,145 @@ function ProjectsSection() {
               <div className="flex gap-4">
                 <a
                   href="https://7uanf.com/pokemon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${fInter} type-caption font-medium text-white/60 transition-colors hover:text-white`}
+                >
+                  {t.projects.viewSite}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* APR Transports */}
+          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="relative h-48 overflow-hidden rounded-t-2xl">
+              <AprTile />
+            </div>
+            <div className="p-6">
+              <div className="absolute top-0 left-0 h-px w-0 bg-gradient-to-r from-sky-500 to-blue-700 transition-all duration-500 group-hover:w-full" />
+              <h3
+                className={`${fInter} type-card-title mb-3 text-white transition-colors group-hover:text-sky-400`}
+              >
+                APR Transports
+              </h3>
+              <p className={`${fInter} type-card-body mb-4 text-white/50`}>
+                {t.projects.apr.description}
+              </p>
+              <div className="mb-3 flex flex-wrap gap-2">
+                {t.projects.apr.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="glass-pill type-label rounded-full px-3 py-1 text-white/60"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <RepoAge created="2026-09-17T00:00:00Z" />
+              <div className="flex gap-4">
+                <a
+                  href="https://aprtransports.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${fInter} type-caption font-medium text-white/60 transition-colors hover:text-white`}
+                >
+                  {t.projects.viewSite}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Caiena Nails */}
+          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="relative h-48 overflow-hidden rounded-t-2xl">
+              <Image
+                src="/caiena-nails.webp"
+                alt="Estudio de nail art Caiena con sus diseños"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+            </div>
+            <div className="p-6">
+              <div className="absolute top-0 left-0 h-px w-0 bg-gradient-to-r from-rose-500 to-violet-600 transition-all duration-500 group-hover:w-full" />
+              <h3
+                className={`${fInter} type-card-title mb-3 text-white transition-colors group-hover:text-rose-300`}
+              >
+                Caiena Nails
+              </h3>
+              <p className={`${fInter} type-card-body mb-4 text-white/50`}>
+                {t.projects.caiena.description}
+              </p>
+              <div className="mb-3 flex flex-wrap gap-2">
+                {t.projects.caiena.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="glass-pill type-label rounded-full px-3 py-1 text-white/60"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <RepoAge created="2026-04-19T00:00:00Z" />
+              <div className="flex gap-4">
+                <a
+                  href="https://caienanails.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${fInter} type-caption font-medium text-white/60 transition-colors hover:text-white`}
+                >
+                  {t.projects.viewSite}
+                </a>
+                <a
+                  href="https://github.com/Z1Code/caiena"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${fInter} type-caption inline-flex items-center gap-1.5 font-medium text-white/60 transition-colors hover:text-white`}
+                >
+                  <FaGithub className="h-3.5 w-3.5" /> {t.projects.code}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Knead & Feed Sourdough */}
+          <div className="glass-card group overflow-hidden rounded-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="relative h-48 overflow-hidden rounded-t-2xl">
+              <Image
+                src="/knead-sourdough.webp"
+                alt="Panadería de masa madre Knead & Feed"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
+            </div>
+            <div className="p-6">
+              <div className="absolute top-0 left-0 h-px w-0 bg-gradient-to-r from-amber-500 to-orange-700 transition-all duration-500 group-hover:w-full" />
+              <h3
+                className={`${fInter} type-card-title mb-3 text-white transition-colors group-hover:text-amber-300`}
+              >
+                Knead &amp; Feed Sourdough
+              </h3>
+              <p className={`${fInter} type-card-body mb-4 text-white/50`}>
+                {t.projects.knead.description}
+              </p>
+              <div className="mb-3 flex flex-wrap gap-2">
+                {t.projects.knead.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="glass-pill type-label rounded-full px-3 py-1 text-white/60"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <RepoAge created="2026-09-18T00:00:00Z" />
+              <div className="flex gap-4">
+                <a
+                  href="https://kneadandfeedsourdough.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`${fInter} type-caption font-medium text-white/60 transition-colors hover:text-white`}

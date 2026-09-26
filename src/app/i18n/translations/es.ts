@@ -93,6 +93,21 @@ const es: Translations = {
         "Mapa colaborativo en tiempo real para el terremoto M7.5 de Venezuela (24 jun 2026): la primera app web desplegada tras el sismo. Reportes de daños y colapsos, búsqueda de desaparecidos, refugios y primeros auxilios.",
       tags: ["Next.js", "Leaflet", "Mapa en vivo", "Respuesta a crisis"],
     },
+    apr: {
+      description:
+        "Sitio y panel de despacho para una transportista de EE.UU.: cotización con direcciones validadas, rutas trazadas con millaje real y tablero de ofertas para chóferes.",
+      tags: ["Next.js", "PostgreSQL", "MapLibre", "Logística"],
+    },
+    caiena: {
+      description:
+        "Estudio de nail art en Leander, TX: catálogo de diseños con reserva, gift cards, programa de lealtad y atención por WhatsApp.",
+      tags: ["Next.js", "PostgreSQL", "Neon", "WhatsApp"],
+    },
+    knead: {
+      description:
+        "Pedidos por adelantado para una panadería de masa madre: menú, franjas de retiro, pago al retirar y panel privado para la panadería.",
+      tags: ["Next.js", "PostgreSQL", "Drizzle", "Pedidos online"],
+    },
     viewSite: "Ver Sitio Web",
     code: "C\u00F3digo",
   },

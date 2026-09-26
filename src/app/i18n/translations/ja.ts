@@ -93,6 +93,21 @@ const ja: Translations = {
         "ベネズエラM7.5地震（2026年6月24日）のリアルタイム協働マップ。地震後最初に公開されたWebアプリ。被害報告、行方不明者の捜索、避難所、応急処置情報。",
       tags: ["Next.js", "Leaflet", "ライブマップ", "災害対応"],
     },
+    apr: {
+      description:
+        "米国の運送会社向けのサイトと配車パネル：検証済み住所での見積もり、実走行距離に基づくルート計算、ドライバー向けの案件ボード。",
+      tags: ["Next.js", "PostgreSQL", "MapLibre", "物流"],
+    },
+    caiena: {
+      description:
+        "テキサス州リンダーのネイルアートスタジオ：予約できるデザインカタログ、ギフトカード、ロイヤルティプログラム、WhatsApp対応。",
+      tags: ["Next.js", "PostgreSQL", "Neon", "WhatsApp"],
+    },
+    knead: {
+      description:
+        "サワードウベーカリーの予約注文サイト：メニュー、受け取り時間帯、受け取り時の支払い、店舗専用の管理パネル。",
+      tags: ["Next.js", "PostgreSQL", "Drizzle", "オンライン注文"],
+    },
     viewSite: "\u30B5\u30A4\u30C8\u3092\u898B\u308B",
     code: "\u30B3\u30FC\u30C9",
   },

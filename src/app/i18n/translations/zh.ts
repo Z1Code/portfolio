@@ -90,6 +90,21 @@ const zh: Translations = {
         "委内瑞拉M7.5地震（2026年6月24日）实时协作地图——震后首个上线的Web应用。灾损报告、寻人、避难所与急救信息。",
       tags: ["Next.js", "Leaflet", "实时地图", "危机响应"],
     },
+    apr: {
+      description:
+        "为美国运输公司打造的网站与调度面板：经过验证的地址报价、按实际里程计算路线，以及司机可认领的运单看板。",
+      tags: ["Next.js", "PostgreSQL", "MapLibre", "物流"],
+    },
+    caiena: {
+      description:
+        "位于德克萨斯州 Leander 的美甲工作室：可预约的设计目录、礼品卡、会员积分制度以及 WhatsApp 客服。",
+      tags: ["Next.js", "PostgreSQL", "Neon", "WhatsApp"],
+    },
+    knead: {
+      description:
+        "酸种面包店的预订网站：菜单、取货时段、取货时付款，以及店家专用的管理面板。",
+      tags: ["Next.js", "PostgreSQL", "Drizzle", "在线订单"],
+    },
     viewSite: "\u67E5\u770B\u7F51\u7AD9",
     code: "\u4EE3\u7801",
   },

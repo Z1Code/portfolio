@@ -58,6 +58,9 @@ export interface Translations {
     doblez: ProjectTranslation;
     pokescan: ProjectTranslation;
     sosvenezuela: ProjectTranslation;
+    apr: ProjectTranslation;
+    caiena: ProjectTranslation;
+    knead: ProjectTranslation;
     viewSite: string;
     code: string;
   };

@@ -92,6 +92,21 @@ const en: Translations = {
         "Real-time collaborative map for Venezuela's M7.5 earthquake (Jun 24, 2026) — the first web app deployed after the quake. Damage and collapse reports, missing-person search, shelters and first aid.",
       tags: ["Next.js", "Leaflet", "Live map", "Crisis response"],
     },
+    apr: {
+      description:
+        "Website and dispatch panel for a US freight carrier: quotes with validated addresses, routes traced with real mileage and a load board for drivers.",
+      tags: ["Next.js", "PostgreSQL", "MapLibre", "Logistics"],
+    },
+    caiena: {
+      description:
+        "Nail art studio in Leander, TX: a design catalogue with booking, gift cards, a loyalty program and WhatsApp support.",
+      tags: ["Next.js", "PostgreSQL", "Neon", "WhatsApp"],
+    },
+    knead: {
+      description:
+        "Pre-order site for a sourdough bakery: menu, collection windows, pay at pickup and a private panel for the bakery.",
+      tags: ["Next.js", "PostgreSQL", "Drizzle", "Online orders"],
+    },
     viewSite: "View Website",
     code: "Code",
   },
