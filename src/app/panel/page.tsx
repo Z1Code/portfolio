@@ -6,7 +6,15 @@ import { ADMIN_PASSWORD_PATH, readAdminPassword, readProjectOrder } from "../lib
 import { PROJECTS } from "../projects";
 import LogoutButton from "../components/LogoutButton";
 
-/** Lee la contraseña y el orden del disco en cada visita: no se cachea nada. */
+/**
+ * Panel de la portada.
+ *
+ * Vive en `/panel` y **no** en `/admin`: en el servidor nginx tiene
+ * `location /admin/` apuntando a otro panel (el de Clawbot, puerto 3010), así que
+ * esa ruta nunca llega a esta aplicación.
+ *
+ * Lee la contraseña y el orden del disco en cada visita: no se cachea nada.
+ */
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
@@ -14,7 +22,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-export default async function AdminPage() {
+export default async function PanelPage() {
   const [authed, order, password] = await Promise.all([
     isAdmin(),
     readProjectOrder(),
