@@ -47,7 +47,7 @@ export const PROJECTS: Project[] = [
   { key: "sosvenezuela", name: "SOS Venezuela 2026", thumb: "/sosvenezuela-banner.png" },
   { key: "pokescan", name: "PokeScan", thumb: "/pokescan-dashboard.png" },
   { key: "apr", name: "APR Transports", thumb: "/apr-hero-poster.jpg" },
-  { key: "caiena", name: "Caiena Nails", thumb: "/caiena-nails.webp" },
+  { key: "caiena", name: "Caiena Nails", thumb: "/sequence-caiena/frame_0001.webp" },
   { key: "knead", name: "Knead & Feed Sourdough", thumb: "/knead-sourdough.webp" },
 ];
 

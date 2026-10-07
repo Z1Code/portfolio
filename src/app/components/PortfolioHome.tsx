@@ -30,6 +30,9 @@ const ChipScroll = dynamic(() => import("./ChipScroll"), { ssr: false });
 const ChipScrollIvania = dynamic(() => import("./ChipScrollIvania"), {
   ssr: false,
 });
+const ChipScrollCaiena = dynamic(() => import("./ChipScrollCaiena"), {
+  ssr: false,
+});
 const ChipScrollPLC = dynamic(() => import("./ChipScrollPLC"), {
   ssr: false,
 });
@@ -1032,14 +1035,7 @@ function ProjectsSection({ order }: { order: ProjectKey[] }) {
             style={{ order: posicion("caiena") }}
           >
             <div className="relative h-48 overflow-hidden rounded-t-2xl">
-              <Image
-                src="/caiena-nails.webp"
-                alt="Estudio de nail art Caiena con sus diseños"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+              <ChipScrollCaiena />
             </div>
             <div className="p-6">
               <div className="absolute top-0 left-0 h-px w-0 bg-gradient-to-r from-rose-500 to-violet-600 transition-all duration-500 group-hover:w-full" />
