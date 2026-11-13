@@ -1219,6 +1219,11 @@ function Footer() {
           <p className={`${fInter} type-caption text-white/35`}>
             {t.footer.copyright}
           </p>
+          <p className={`${fInter} type-caption mt-2 text-white/35`}>
+            <a href="/sobre-mi" hrefLang="es-CL" className="transition hover:text-white">Sobre mí</a>
+            {" · "}
+            <a href="/about" hrefLang="en" className="transition hover:text-white">About</a>
+          </p>
         </div>
       </div>
     </footer>
