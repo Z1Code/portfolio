@@ -87,7 +87,7 @@ const zh: Translations = {
     },
     sosvenezuela: {
       description:
-        "委内瑞拉M7.5地震（2026年6月24日）实时协作地图——震后首个上线的Web应用。灾损报告、寻人、避难所与急救信息。",
+        "委内瑞拉M7.5地震（2026年6月24日）实时协作地图——\u9707\u540E\u4E0D\u52307\u5C0F\u65F6\u5373\u4E0A\u7EBF。灾损报告、寻人、避难所与急救信息。",
       tags: ["Next.js", "Leaflet", "实时地图", "危机响应"],
     },
     apr: {

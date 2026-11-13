@@ -90,7 +90,7 @@ const pt: Translations = {
     },
     sosvenezuela: {
       description:
-        "Mapa colaborativo em tempo real para o terremoto M7.5 da Venezuela (24 jun 2026) — o primeiro app web publicado após o sismo. Relatos de danos e colapsos, busca de desaparecidos, abrigos e primeiros socorros.",
+        "Mapa colaborativo em tempo real para o terremoto M7.5 da Venezuela (24 jun 2026) — no ar menos de 7 horas ap\u00F3s o sismo. Relatos de danos e colapsos, busca de desaparecidos, abrigos e primeiros socorros.",
       tags: ["Next.js", "Leaflet", "Mapa ao vivo", "Resposta a crises"],
     },
     apr: {

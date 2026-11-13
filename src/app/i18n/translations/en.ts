@@ -89,7 +89,7 @@ const en: Translations = {
     },
     sosvenezuela: {
       description:
-        "Real-time collaborative map for Venezuela's M7.5 earthquake (Jun 24, 2026) — the first web app deployed after the quake. Damage and collapse reports, missing-person search, shelters and first aid.",
+        "Real-time collaborative map for Venezuela's M7.5 earthquake (Jun 24, 2026) — online less than 7 hours after the quake. Damage and collapse reports, missing-person search, shelters and first aid.",
       tags: ["Next.js", "Leaflet", "Live map", "Crisis response"],
     },
     apr: {
