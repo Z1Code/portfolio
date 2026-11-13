@@ -21,6 +21,8 @@ const SAME_AS = [
   "https://www.linkedin.com/in/juan-fernandez7",
   "https://x.com/7uanF",
   "https://github.com/Z1Code",
+  "https://www.instagram.com/7uanf/",
+  "https://www.tiktok.com/@7uanf",
   "https://passionfroot.me/juan",
 ];
 

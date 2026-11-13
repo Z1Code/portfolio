@@ -2,7 +2,8 @@
 
 > AI Pipeline Engineer based in Santiago, Chile. Builds production AI agents, multi-agent systems and LLM pipelines, and the full-stack apps around them. Ingeniero de pipelines de IA en Santiago, Chile.
 
-Also known as: Juan Fernández, @7uanF (X), Z1Code (GitHub).
+Also known as: Juan Fernández, @7uanF (X, Instagram, TikTok), Z1Code (GitHub).
+About page: https://7uanf.com/about (English) · https://7uanf.com/sobre-mi (español)
 
 ## Profile
 
@@ -27,4 +28,6 @@ Also known as: Juan Fernández, @7uanF (X), Z1Code (GitHub).
 - LinkedIn: https://www.linkedin.com/in/juan-fernandez7
 - X: https://x.com/7uanF
 - GitHub: https://github.com/Z1Code
+- Instagram: https://www.instagram.com/7uanf/
+- TikTok: https://www.tiktok.com/@7uanf
 - Brand collaborations: https://passionfroot.me/juan

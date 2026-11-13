@@ -8,6 +8,8 @@ const LINKS = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/juan-fernandez7" },
   { label: "X (@7uanF)", href: "https://x.com/7uanF" },
   { label: "GitHub (Z1Code)", href: "https://github.com/Z1Code" },
+  { label: "Instagram", href: "https://www.instagram.com/7uanf/" },
+  { label: "TikTok", href: "https://www.tiktok.com/@7uanf" },
   { label: "WhatsApp", href: "https://wa.me/56937111513" },
   { label: "Passionfroot", href: "https://passionfroot.me/juan" },
 ];
