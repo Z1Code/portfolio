@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     username: "7uanF",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "@7uanF",
     creator: "@7uanF",
     title: TITLE,

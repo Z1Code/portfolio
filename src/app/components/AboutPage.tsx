@@ -44,6 +44,7 @@ const content = {
       {
         h2: "Proyectos",
         items: [
+          "iCopy: copia de seguridad de iCloud Fotos para Windows, completa, verificada y sin cortes. Es mi proyecto open source más popular en GitHub.",
           "PokeScan: radar de precios de cartas TCG sobre más de 14.000 cartas, con pipelines de datos que se actualizan a diario.",
           "APR Transports: sitio web y panel de despacho para una transportista de carga en Estados Unidos.",
           "FashionModelAI: de una foto de una prenda a imágenes de modelo listas para producción en 4K.",
@@ -99,6 +100,7 @@ const content = {
       {
         h2: "Projects",
         items: [
+          "iCopy: complete, verified and uninterrupted iCloud Photos backup for Windows. My most popular open-source project on GitHub.",
           "PokeScan: TCG card price radar across 14,000+ cards, with data pipelines updated daily.",
           "APR Transports: website and dispatch panel for a US freight carrier.",
           "FashionModelAI: one garment photo to production-ready model imagery in 4K.",

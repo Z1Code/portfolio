@@ -16,6 +16,7 @@ About page: https://7uanf.com/about (English) · https://7uanf.com/sobre-mi (esp
 
 ## Selected work
 
+- iCopy: complete, verified iCloud Photos backup for Windows. His most popular open-source project (100+ GitHub stars). https://github.com/Z1Code/iCopy
 - SOS Venezuela 2026: civic platform online less than 7 hours after the M7.2 and M7.5 earthquakes in Venezuela (June 24, 2026). Live damage map, missing-persons directory and a public API. Code: https://github.com/Z1Code/sosvenezuela2026
 - PokeScan: Pokémon TCG price radar across 14,000+ cards, updated daily.
 - APR Transports: website and dispatch panel for a US freight carrier.
