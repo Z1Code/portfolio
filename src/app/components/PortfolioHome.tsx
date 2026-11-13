@@ -839,9 +839,6 @@ function ProjectsSection({ order }: { order: ProjectKey[] }) {
               </div>
               <RepoAge created="2026-08-29T00:00:00Z" />
               <div className="flex gap-4">
-                <a href="https://7uanf.com/garru" target="_blank" rel="noopener noreferrer" className={`${fInter} type-caption font-medium text-white/60 transition-colors hover:text-white`}>
-                  {t.projects.viewSite}
-                </a>
                 <a href="https://github.com/Z1Code/garru-web" target="_blank" rel="noopener noreferrer" className={`${fInter} type-caption inline-flex items-center gap-1.5 font-medium text-white/60 transition-colors hover:text-white`}>
                   <FaGithub className="h-3.5 w-3.5" /> {t.projects.code}
                 </a>
@@ -880,11 +877,6 @@ function ProjectsSection({ order }: { order: ProjectKey[] }) {
                 ))}
               </div>
               <RepoAge created="2026-08-29T00:00:00Z" />
-              <div className="flex gap-4">
-                <a href="https://7uanf.com/empanadas" target="_blank" rel="noopener noreferrer" className={`${fInter} type-caption font-medium text-white/60 transition-colors hover:text-white`}>
-                  {t.projects.viewSite}
-                </a>
-              </div>
             </div>
           </div>
 
