@@ -1,0 +1,9 @@
+import type { MetadataRoute } from "next";
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: { userAgent: "*", allow: "/", disallow: ["/admin", "/panel", "/api/"] },
+    sitemap: "https://7uanf.com/sitemap.xml",
+    host: "https://7uanf.com",
+  };
+}

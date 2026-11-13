@@ -1,0 +1,30 @@
+# Juan Fernandez
+
+> AI Pipeline Engineer based in Santiago, Chile. Builds production AI agents, multi-agent systems and LLM pipelines, and the full-stack apps around them. Ingeniero de pipelines de IA en Santiago, Chile.
+
+Also known as: Juan Fernández, @7uanF (X), Z1Code (GitHub).
+
+## Profile
+
+- Role: AI Pipeline Engineer at a YC-backed startup (stealth), building a 0-to-1 product on an agent architecture.
+- Before: Web Team Leader / AI at Globant. Led a team of 8 engineers and architected production multi-agent systems (delegation patterns, persistent memory, LLMs wired to real tools through function calling and MCP).
+- Location: Santiago, Chile. Works remotely.
+- Languages: Spanish, English.
+- Focus: AI agents, multi-agent systems, LLM pipelines, Model Context Protocol (MCP), Claude, GPT, Next.js, TypeScript, PostgreSQL.
+- AI content creator on X (@7uanF). AI companies hire him to show their products doing real work: viktor, Gamma, Luma AI, Replit, Modulate, Replay, Pollo.ai, Skygen and Matrix OS.
+
+## Selected work
+
+- SOS Venezuela 2026: civic platform online less than 7 hours after the M7.2 and M7.5 earthquakes in Venezuela (June 24, 2026). Live damage map, missing-persons directory and a public API. Code: https://github.com/Z1Code/sosvenezuela2026
+- PokeScan: Pokémon TCG price radar across 14,000+ cards, updated daily.
+- APR Transports: website and dispatch panel for a US freight carrier.
+- gcp-oauth-automator: automates Google OAuth 2.0 client creation in GCP with Playwright. https://github.com/Z1Code/gcp-oauth-automator
+- More projects: https://7uanf.com/#projects
+
+## Links
+
+- Website: https://7uanf.com
+- LinkedIn: https://www.linkedin.com/in/juan-fernandez7
+- X: https://x.com/7uanF
+- GitHub: https://github.com/Z1Code
+- Brand collaborations: https://passionfroot.me/juan

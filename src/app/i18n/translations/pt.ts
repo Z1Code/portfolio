@@ -10,7 +10,7 @@ const pt: Translations = {
   hero: {
     greeting: "Ol\u00E1, eu sou",
     subtitle:
-      "Desenvolvedor Full Stack especializado em criar aplica\u00E7\u00F5es escal\u00E1veis e eficientes com tecnologias modernas.",
+      "AI Pipeline Engineer em Santiago, Chile. Construo agentes de IA em produ\u00E7\u00E3o, sistemas multiagente e pipelines de LLM, e as aplica\u00E7\u00F5es full stack ao redor deles.",
     cta: "Ver Projetos",
     yearsExp: "Ano",
     projectsCount: "Projetos",

@@ -5,7 +5,8 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import { motion, AnimatePresence, type Variants } from "motion/react";
 import { Menu, X, ArrowRight, Github, Clock } from "lucide-react";
-import { FaWhatsapp, FaGithub } from "react-icons/fa";
+import { FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import {
   SiReact,
   SiNextdotjs,
@@ -1177,6 +1178,28 @@ function ContactSection() {
           >
             <Github className="h-4 w-4" />
             GitHub
+          </a>
+
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/juan-fernandez7"
+            target="_blank"
+            rel="noopener noreferrer me"
+            className={`${fInter} type-button inline-flex items-center gap-2 rounded-full border border-white/[0.14] bg-white/[0.04] px-7 py-3.5 text-white backdrop-blur-sm transition-all hover:border-white/25 hover:bg-white/[0.08] hover:scale-[1.03]`}
+          >
+            <FaLinkedin className="h-4 w-4" />
+            LinkedIn
+          </a>
+
+          {/* X */}
+          <a
+            href="https://x.com/7uanF"
+            target="_blank"
+            rel="noopener noreferrer me"
+            className={`${fInter} type-button inline-flex items-center gap-2 rounded-full border border-white/[0.14] bg-white/[0.04] px-7 py-3.5 text-white backdrop-blur-sm transition-all hover:border-white/25 hover:bg-white/[0.08] hover:scale-[1.03]`}
+          >
+            <FaXTwitter className="h-4 w-4" />
+            X
           </a>
         </div>
       </motion.div>
